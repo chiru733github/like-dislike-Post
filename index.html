@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post with Like and dislike</title>
+	<link rel="stylesheet" href="../mdb/css/bootstrap.css">
+	<link rel="stylesheet" href="../mdb/css/mdb.css">
+	<link rel="stylesheet" href="../mdb/css/Styles.css">
+	<link rel="stylesheet" href="../font awesome/css/all.css">
+	<style>
+		#imagefit
+		{
+			width: 300px;
+			height: 360px;
+			align-items: center;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-5">
+				<div class="card">
+					<div class="card-header text-center bg-danger">
+						<img src="../images/chiru.jfif"class="img-fluid" id="imagefit">
+					</div>
+					<div class="card-body bg-info text-center">
+						<div class="row">
+							<div class="col">
+								<button class="btn btn-outline-white btn-block btn-primary bg-success" id="like">
+									<i class="fa-regular fa-thumbs-up pr-2"></i>Likes
+								</button>
+								<h4 id="likevalue">01</h4>
+							</div>
+							<div class="col">
+								<button class="btn btn-outline-white btn-block btn-primary bg-dark" id="dislike">
+									<i class="fa-regular fa-thumbs-down pr-2"></i>Dislikes
+								</button>
+								<h4 id="dislikevalue">01</h4>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-primary text-center">
+						<h1>Total:- <span id="totalvalue">01</span></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../Javascript/likes.js"></script>
+</body>
+</html>
